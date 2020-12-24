@@ -33,15 +33,7 @@
 			var str = "qwertyuiopasdfghjklzxcvbnm";
 			for(var i = 0;i<clos;i++) {
 				drops.push(0);
-			}
- 
-			function drawString() {
-				ctx.fillStyle="rgba(0,0,0,0.05)"
-				ctx.fillRect(0,0,w,h);
-				ctx.font = "600 "+fontSize+"px 微软雅黑";
-				ctx.fillStyle = "#00ff00";
- 
-				for(var i = 0;i<clos;i++) {
+	
 					var x = i*fontSize;
 					var y = drops[i]*fontSize;
 					ctx.fillText(str[Math.floor(Math.random()*str.length)],x,y);
